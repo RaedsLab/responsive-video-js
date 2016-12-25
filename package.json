@@ -1,0 +1,31 @@
+{
+  "name": "responsive-video-js",
+  "version": "0.0.1",
+  "description": " Make embedded videos responsive, the easy way",
+  "main": "src/responsive-video.js",
+  "scripts": {
+    "uglify": "mkdir -p dist; uglifyjs src/*.js -m -o dist/responsive-video.js; uglifyjs dist/responsive-video.js -m -c -o dist/responsive-video.min.js --support-ie8 --source-map dist/responsive-video.map.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RaedsLab/responsive-video-js.git"
+  },
+  "keywords": [
+    "video",
+    "responsive",
+    "html5",
+    "youtube",
+    "vimeo",
+    "dailymotion"
+  ],
+  "author": "Raed Chammam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RaedsLab/responsive-video-js/issues"
+  },
+  "homepage": "https://github.com/RaedsLab/responsive-video-js#readme",
+  "devDependencies": {
+    "uglifyjs": "^2.4.10"
+  }
+}
